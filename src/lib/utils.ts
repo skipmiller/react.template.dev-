@@ -1,8 +1,11 @@
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
 /**
- * Combines multiple class names into a single string
+ * Combines multiple class names into a single string, used by Shadcn UI
  */
-export function cn(...classes: (string | undefined | null | false)[]) {
-  return classes.filter(Boolean).join(' ');
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
 }
 
 /**

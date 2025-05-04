@@ -1,17 +1,17 @@
-# Cursor Project Template
+# React Template Development Environment
 
-A professional template repository optimized for development in the Cursor IDE with Claude integration.
+A professional template repository optimized for React development in the Cursor IDE with Claude integration.
 
 ## Overview
 
-This repository serves as a starter template for projects developed using the [Cursor IDE](https://cursor.sh/), with special focus on leveraging Claude AI capabilities. It includes pre-configured settings, security best practices, and workflow guidance to help you get started quickly.
+This repository serves as a starter template for React projects developed using the [Cursor IDE](https://cursor.sh/), with special focus on leveraging Claude AI capabilities. It includes pre-configured settings, security best practices, and workflow guidance to help you get started quickly.
 
 ## Features
 
-- Pre-configured development environment for Cursor IDE
+- Pre-configured React development environment for Cursor IDE
 - Claude AI integration setup with best practices
 - Security-focused configuration
-- Standardized project structure
+- Standardized React project structure
 - Documented workflow patterns
 
 ## Getting Started
@@ -19,7 +19,18 @@ This repository serves as a starter template for projects developed using the [C
 1. Click "Use this template" on GitHub to create a new repository based on this template
 2. Clone your new repository: `git clone [your-repository-url]`
 3. Open the project in Cursor IDE
-4. Customize the configuration files for your specific project
+4. Run `npm install` to install dependencies
+5. Start development with `npm start`
+
+## Project Structure
+
+- `public/` - Static files that don't require processing
+- `src/` - Source code for the application
+  - `components/` - Reusable React components
+  - `pages/` - Page components
+  - `assets/` - Images, fonts, and other static assets
+  - `styles/` - Global styles and theme configurations
+  - `utils/` - Utility functions and helpers
 
 ## Security Considerations
 

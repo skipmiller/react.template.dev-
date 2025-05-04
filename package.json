@@ -4,12 +4,24 @@
   "private": true,
   "description": "A development environment for React templates",
   "scripts": {
-    "start": "echo 'No start script defined yet - add your framework-specific start command'",
-    "build": "echo 'No build script defined yet - add your framework-specific build command'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
-  "dependencies": {},
+  "dependencies": {
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
-    "eslint": "^8.38.0",
-    "prettier": "^2.8.7"
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.51",
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^5.3.3",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0",
+    "prettier": "^3.2.4"
   }
 } 

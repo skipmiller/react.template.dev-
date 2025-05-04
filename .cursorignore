@@ -1,0 +1,39 @@
+# Ignore real environment files to prevent them from being indexed or accessed by Cursor
+.env
+.env.*
+!.env.example   # Allow example environment files
+
+# Ignore other sensitive files and directories
+secrets/
+config/private/
+**/credentials.json
+**/keys/
+**/private_key.pem
+**/id_rsa
+**/id_rsa.pub
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.cer
+
+# Ignore potential sensitive data
+**/*password*
+**/*secret*
+**/*credential*
+**/*token*
+**/*apikey*
+**/*api_key*
+
+# Ignore CI/CD variables and secrets
+.github/secrets
+.gitlab/secrets
+
+# Ignore local development files that might contain sensitive information
+.vscode/settings.json
+.idea/workspace.xml
+
+node_modules/
+dist/
+coverage/
+.DS_Store 

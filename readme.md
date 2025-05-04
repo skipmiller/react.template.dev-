@@ -13,6 +13,7 @@ This repository serves as a starter template for React projects developed using 
 - Security-focused configuration
 - Standardized React project structure
 - Documented workflow patterns
+- Ready for backend integration with [Gibson AI](https://www.gibsonai.com/)
 
 ## Getting Started
 
@@ -31,6 +32,16 @@ This repository serves as a starter template for React projects developed using 
   - `assets/` - Images, fonts, and other static assets
   - `styles/` - Global styles and theme configurations
   - `utils/` - Utility functions and helpers
+
+## Future Database Integration
+
+This template is designed to be easily integrated with [Gibson AI](https://www.gibsonai.com/) for database functionality. Gibson AI allows you to:
+
+- Design, deploy, and scale serverless databases through AI-assisted workflows
+- Generate production-grade APIs with built-in authentication and authorization
+- Integrate with your coding workflow through MCP servers
+
+When you're ready to add database capabilities, sign up at [Gibson AI](https://www.gibsonai.com/) and follow their integration guides.
 
 ## Security Considerations
 

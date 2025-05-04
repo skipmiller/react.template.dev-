@@ -61,9 +61,10 @@ export const AUTH_CONFIG = {
   // Add auth config when setting up authentication
 };
 
-// Database configuration (for future use)
-export const DB_CONFIG = {
-  // Add database config when setting up database connection
+// Database configuration (for future use with Gibson AI)
+export const GIBSON_CONFIG = {
+  // This will be configured when integrating with Gibson AI
+  // Visit https://www.gibsonai.com/ for more information
 };
 
 // Analytics & Services (for future use)

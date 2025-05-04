@@ -4,16 +4,16 @@ A professional template repository optimized for React development in the Cursor
 
 ## Overview
 
-This repository serves as a starter template for React projects developed using the [Cursor IDE](https://cursor.sh/), with special focus on leveraging Claude AI capabilities. It includes pre-configured settings, security best practices, and workflow guidance to help you get started quickly.
+This repository serves as a starter template for React projects developed using the [Cursor IDE](https://cursor.sh/), with special focus on leveraging Claude AI capabilities. It provides a modern, secure, and scalable foundation for building sophisticated web applications with minimal setup time.
 
 ## Features
 
-- Pre-configured React development environment for Cursor IDE
-- Claude AI integration setup with best practices
-- Security-focused configuration
-- Standardized React project structure
-- Documented workflow patterns
-- Ready for backend integration with [Gibson AI](https://www.gibsonai.com/)
+- **Modern Tech Stack**: Next.js 14, React 18, TypeScript, and Tailwind CSS
+- **UI Components**: Pre-configured Shadcn UI component library
+- **Developer Experience**: ESLint, Prettier, and TypeScript for code quality
+- **Security-Focused**: Built-in security best practices and configurations
+- **AI Integration**: Claude in Cursor integration for enhanced development
+- **Future-Ready**: Prepared for backend integration with [Gibson AI](https://www.gibsonai.com/)
 
 ## Getting Started
 
@@ -21,17 +21,25 @@ This repository serves as a starter template for React projects developed using 
 2. Clone your new repository: `git clone [your-repository-url]`
 3. Open the project in Cursor IDE
 4. Run `npm install` to install dependencies
-5. Start development with `npm start`
+5. Start development with `npm run dev`
 
 ## Project Structure
 
-- `public/` - Static files that don't require processing
-- `src/` - Source code for the application
-  - `components/` - Reusable React components
-  - `pages/` - Page components
-  - `assets/` - Images, fonts, and other static assets
-  - `styles/` - Global styles and theme configurations
-  - `utils/` - Utility functions and helpers
+```
+├── public/              # Static files
+├── src/
+│   ├── app/             # Next.js App Router pages
+│   ├── components/      # Reusable UI components
+│   │   └── ui/          # Shadcn UI components
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Utility functions and libraries
+│   └── types/           # TypeScript type definitions
+├── .env.example         # Environment variables template
+├── .gitignore           # Git ignore rules
+├── .cursorignore        # Cursor IDE ignore rules
+├── .cursorrules         # Cursor IDE behavior configuration
+└── README.md            # Project documentation
+```
 
 ## Future Database Integration
 
@@ -49,7 +57,7 @@ This template follows security best practices:
 
 - `.gitignore` configured to prevent sensitive files from being committed
 - `.cursorignore` configured to prevent sensitive files from being indexed or accessed by Cursor
-- Environment variable handling recommendations
+- Environment variable management system with validation
 - Documentation for securing API keys and credentials
 
 ### Sensitive Data Protection
@@ -61,42 +69,23 @@ To protect sensitive data:
 3. Store sensitive information using a secure secrets management solution
 4. Review commits before pushing to ensure no sensitive data is included
 
-### Environment Variables
-
-For projects requiring environment variables:
-
-1. Create a `.env.example` file with placeholder values (no real secrets):
-   ```
-   # API Keys (NEVER put real keys in this example file)
-   API_KEY=your_api_key_here
-   SECRET_KEY=your_secret_key_here
-   
-   # Database Configuration
-   DB_HOST=localhost
-   DB_PORT=5432
-   DB_USER=username
-   DB_PASSWORD=password
-   
-   # Application Settings
-   NODE_ENV=development
-   PORT=3000
-   ```
-
-2. Users should:
-   - Copy `.env.example` to `.env` (which is git-ignored)
-   - Replace placeholders with actual values in the `.env` file
-   - Never commit the `.env` file
-
 ## Configuration Files
 
 - `.gitignore` - Specifies files to be ignored by Git
 - `.cursorignore` - Specifies files to be ignored by Cursor's indexing and AI features
 - `.cursorrules` - Defines rules for how Cursor interacts with your project
-- Additional configuration files can be added as needed
+- `tailwind.config.js` - Tailwind CSS configuration
+- `tsconfig.json` - TypeScript configuration
+- `next.config.js` - Next.js configuration
+- `vercel.json` - Vercel deployment configuration
 
 ## License
 
 MIT
+
+## Author
+
+[Skip Miller](https://github.com/skipmiller)
 
 ## Contributing
 
@@ -109,25 +98,9 @@ Contributions to improve this template are welcome:
 5. Push to the branch (`git push origin feature/improvement`)
 6. Create a new Pull Request
 
-## Best Practices
+## Claude in Cursor Usage Guide
 
-### When Using Claude in Cursor
-
-1. **Be specific with instructions** - Provide clear, detailed instructions to get the best results
-2. **Use thinking mode** for complex problems - Try prompts like "think hard about this problem"
-3. **Leverage context** - Ensure Claude can see relevant files for better assistance
-4. **Security first** - Never share sensitive information with Claude
-
-### For Efficient Development
-
-1. **Consistent formatting** - Use a code formatter to maintain consistent style
-2. **Document as you go** - Write clear comments and documentation
-3. **Regular commits** - Make small, focused commits with descriptive messages
-4. **Testing** - Write tests for critical functionality
-
-## Claude in Cursor Configuration Guide
-
-## Project Setup Instructions
+### Project Setup Instructions
 
 When setting up a new project, ask Claude to help with the initial configuration:
 
@@ -142,7 +115,7 @@ Claude, please help me set up this project:
 7. Fetch any required documentation
 ```
 
-## Context Priming
+### Context Priming
 
 After setup, add this to your project README for better context awareness:
 
@@ -152,6 +125,13 @@ Claude, please help me understand this codebase:
 2. Run `git ls-files` to see all tracked files
 3. Summarize what you understand about the codebase
 ```
+
+### Best Practices with Claude
+
+1. **Be specific with instructions** - Provide clear, detailed instructions to get the best results
+2. **Use thinking mode** for complex problems - Try prompts like "think hard about this problem"
+3. **Leverage context** - Ensure Claude can see relevant files for better assistance
+4. **Security first** - Never share sensitive information with Claude
 
 ## Single File Agents
 
